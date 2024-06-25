@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"> 
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script  defer src="script.js"></script>
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+  <div class="mobile-nav">
+    <div class="mobile-nav-link">
+      <img src="images/icon-close.svg" alt="icon-close" class="close">
+      <div>
+        <a href="/">home</a>
+        <a href="/">shop</a>
+        <a href="/">about</a>
+        <a href="/">contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture>
+            <source media="(max-width:400px )" srcset="images/mobile-image-hero-1.jpg">
+            <source srcset="images/desktop-image-hero-1.jpg">
+          <img src="images/desktop-image-hero-1.jpg" alt="slider-images">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source media="(max-width:400px )" srcset="images/mobile-image-hero-2.jpg">
+            <source srcset="images/desktop-image-hero-2.jpg">
+          <img src="images/desktop-image-hero-2.jpg" alt="slider-images">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source media="(max-width:400px )" srcset="images/mobile-image-hero-3.jpg">
+            <source srcset="images/desktop-image-hero-3.jpg">
+          <img src="images/desktop-image-hero-3.jpg" alt="slider-images">
+          </picture>
+        </div>
+      </div> 
+    </div>
+    <div class="btn-wrapper">
+      <div class="button-prev"><img src="images/icon-angle-left.svg" alt=""></div>
+      <div class="button-next"><img src="images/icon-angle-right.svg" alt=""></div>
+    </div>
+    <div class="nav-bar">
+      <img src="images/logo.svg" alt="logo" class="logo">
+      <div class="nav-link">
+        <a href="/">home</a>
+        <a href="/">shop</a>
+        <a href="/">about</a>
+        <a href="/">contact</a>
+      </div>
+      <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="hamburger-menu">
+    </div>
+    <div class="discover">
+      <div class="text">
+        <h1 class="child">Discover innovative<br>
+        ways to decorate</h1>
+        <p class="child">We provide unmatched quality. comfort, and styles for property
+        owners across the country. Our experts combine form an
+        function in bringing your vision to life. Create a room in your
+        own styles with our collection and make your property a reflection of you and what you love.</p>
+        <a href="/">SHOP NOW <img src="images/icon-arrow.svg" alt="icon-arrow"></a>
+      </div>
+    </div>
+  </div>
+  <div class="info-about">
+    <img src="images/image-about-dark.jpg" alt="">
+    <div class="text">
+      <h1>ABOUT OUR FURNITURE</h1>
+      <p>
+        Our multifuntional collection blends design and function to suit your
+        individual taste. Make each room unique, or pick a cohesive theme that best 
+        express your interests and what inspires you. Find the furniture pieces you 
+        need, from traditional to contemporary styles or anything in between.
+        Product specialists are available to help you create your dream space. 
+      </p>
+    </div>
+    <img src="images/image-about-light.jpg" alt="">
+  </div>
+  
+</body>
+
+</html>

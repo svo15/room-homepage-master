@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "League Spartan", sans-serif;;
+}
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper{
+    position: relative;
+    display:flex;
+    height: 52.3%;
+}
+.swiper{
+    position:relative;
+    z-index: -1;
+}
+.swiper-wrapper {
+    
+    z-index: -1;
+    img { 
+    width: 55% ;
+    }
+}
+.btn-wrapper{
+    display: flex;
+    margin: 0;
+    position:absolute;
+    bottom: 0;
+    left: 55%;
+    z-index: 1;
+    .button-next, .button-prev{
+    background-color: black;
+    color: #fff;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+.nav-bar{
+    position: absolute;
+    top: 0;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-link{
+        margin-left: 100px;
+        font-weight: 500;
+        font-size: 20px;
+        a{
+            margin-left: 25px;
+            padding-bottom: 10px;
+            position: relative;
+            &:hover{
+               &::before{
+                position: absolute;
+                content: "";
+                width: 50%;
+                bottom: 0;
+                left: 10px;
+                border-bottom:2px solid white;
+                } 
+            }  
+        }
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    
+}
+.mobile-nav{
+    display: none;
+    top: 0;
+    position: absolute;
+    height:270%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    &.active{
+        display: block;
+    }
+    .mobile-nav-link{
+        position: absolute;
+        top:0;
+        height: 125px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            font-size: 18px;
+            font-weight: 900;
+            color: black;
+            margin-left: 20px;
+        }
+    }
+}
+
+
+.discover{
+    position: absolute;
+    width: 44.7%;
+    height: 98.5%;
+    left: 55%;
+    z-index: 0;
+    
+    .text{
+        margin: 80px 100px;
+        .child{
+            margin-bottom: 30px;
+        }
+        h1{
+            font-size: 51px;
+        }
+        p{
+            font-size: 17px;          
+            color: grey;   
+        }
+        a{
+            color: black;
+            letter-spacing: 20px;
+            font-size: 20px;
+            &:hover{
+                color: grey;
+            }
+        }
+    }
+    
+}
+.info-about{
+    height: 47.7%;
+    display: flex;
+    img{
+        width: 30%;
+        height: 100%;
+    }
+    .text{
+        width: 40%;
+        height: 100%;
+        padding:100px  70px;
+        h1{
+            letter-spacing: 5px;
+        }
+        p{
+            color: grey;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+    }
+}
+@media only screen and ( min-width:1450px) {
+    .discover{
+        .text{
+            h1{
+                font-size: 70px;
+            }
+            p{
+                font-size: 20px;
+                
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    body{
+        overflow: scroll;
+    }
+    .wrapper{
+        display: block;
+        height: 770px;
+    }
+    .swiper-wrapper img{
+        width: 100%;
+        height: 100%;
+    }
+    .btn-wrapper{
+        top: 310px;
+        right: 0;
+        left: 74%;
+       .button-next, .button-prev{
+        width: 50px;
+        height: 50px;
+        }
+    } 
+    .nav-bar{
+        .logo{
+            position: absolute;
+            margin-left: 110px;
+        }
+        .nav-link{
+            display: none;
+        }
+        .hamburger-menu{
+            display: block;
+            position: absolute;
+        }
+    }
+    .discover{
+        position: static;
+        width: 100%;
+        height: 350px;
+        .text{
+            margin: 50px 25px;
+            h1{
+                font-size: 35px;
+            }
+            p{
+                font-size: 18px;
+            }
+            a{
+                font-size: 15px;
+                letter-spacing: 15px;
+            }
+        }
+    }
+    .info-about{
+        
+        display: block;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .text{
+            width: 84%;
+            height: 100%;
+            padding-bottom: 0;
+            h1{
+                letter-spacing: 5px;
+                font-size: 20px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+    
